@@ -6,11 +6,16 @@
     */
 
     //Entrada
-
+    let usuario = prompt('Informe um nome de usuário:');
+    let senha = prompt('Informe uma senha:');
 
     //Processamento
-
+    while(usuario == senha){
+        alert('O nome de usuário não pode ser igual a senha:');
+        usuario = prompt('Informe um nome de usuário:');
+        senha = prompt('Informe uma senha:');
+    }
 
     //Saída
-
+    alert('Cadastro efetuado com sucesso!')
 </script>

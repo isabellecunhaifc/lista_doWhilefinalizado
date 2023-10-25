@@ -6,10 +6,15 @@
     */
 
     //Entrada
-
+    let nota = Number(prompt('Informe uma nota de 0 a 10'));
+    
+    while (nota < 0 || nota > 10) {
+        alert('Valor inválido')
+         nota = Number(prompt('Informe uma nota de 0 a 10'));
+    }
 
     //Processamento
-
+    alert(`${nota}`)
 
     //Saída
 

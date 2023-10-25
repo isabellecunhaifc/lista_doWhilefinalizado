@@ -11,11 +11,35 @@
     */
 
     //Entrada
-
+    let nome = prompt('Informe seu nome:');
+    let idade = Number(prompt('Informe sua idade:'));
+    let salario = Number(prompt('Informe seu salário:'));
+    let sexo = prompt('Informe seu sexo:').toLowerCase();
+    let estado = prompt('Informe seu estado civil:').toLowerCase();
 
     //Processamento
-
+    while(nome.length <= 3){
+        alert('Nome inválido');
+        nome = prompt('Informe seu nome(mais de 3 caracteres):');
+    }
+    while(idade < 0 || idade > 150){
+        alert('Idade inválida');
+        idade = prompt('Informe sua idade(entre 0 e 150):');
+    }
+    while(salario <= 0){
+        alert('Salário inválido');
+        salario = prompt('Informe seu salário(maior que zero):');
+    }
+    while(sexo != 'f' && sexo != 'm'){
+        alert('Sexo inválido');
+        sexo = prompt('Informe seu sexo(f ou m):').toLowerCase();
+    }
+    while(estado != 's' && estado != 'c' && estado != 'v' && estado != 'd'){
+        alert('Estado civil inválido');
+        estado =  prompt('Informe seu estado civil(s, c, v, ou d):').toLowerCase();
+    }
 
     //Saída
+    alert(`Dados validados com sucesso!`)
 
 </script>
